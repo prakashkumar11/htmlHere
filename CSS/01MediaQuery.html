@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>media query</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .container{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            gap: 5;
+            background-color: rgb(80, 64, 45);
+            padding: 10%;
+            margin: 5%;
+            color: white;
+            border: 2px solid black;
+            border-radius: 5px;
+        }
+        .container title{
+            text-align: center;
+            margin: 5rem;
+        }
+        .container .content p{
+            text-align: justify;
+            line-height: normal;
+            margin: 5rem;
+        } 
+
+        .container .book-img img{
+            border-radius: 5px;
+        }
+
+        @media screen  and (max-width: 1000px) {
+            .container{
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                text-align: center;
+            }
+            .container .title{
+                font-size: 4rem;
+            }
+            .container .content p{
+                text-align: justify;
+                font-size: 2rem;
+            }
+        }
+
+
+       
+    </style>
+</head>
+<body>
+    
+    <div class="container">
+        <div class="title">
+            Hello Mr chhotu
+        </div>
+
+        <div class="content">
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. <br> Totam veritatis reiciendis voluptatibus assumenda in incidunt ratione <br> sapiente, cupiditate suscipit nulla! Unde facere nobis repellendus temporibus itaque voluptatum, porro facilis fuga.</p>
+        </div>
+
+        <div class="book-img">
+            <img src="img/images.png" alt="" srcset="">
+        </div>
+
+
+
+    </div>
+
+    
+</body>
+</html>
